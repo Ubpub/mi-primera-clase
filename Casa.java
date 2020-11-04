@@ -76,4 +76,15 @@ public class Casa {
             System.out.println("Propietario: " + propietario + " | Número de habitaciones: " + habitaciones + " | Reformada: No.");
         }
     }
+    
+    public String getDevuelveDetalles() {
+        String reformaCasa;
+        if (reformada == true) {
+            reformaCasa = "Sí";
+        }
+        else {
+            reformaCasa = "No";
+        }
+        return "Propietario: " + propietario + " | Número de habitaciones: " + habitaciones + " | Reformada: " + reformaCasa + ".";
+    }
 }
